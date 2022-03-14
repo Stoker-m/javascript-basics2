@@ -1,61 +1,61 @@
-const getNthElement = (index, array) => {
-  // your code here
+function getNthElement(index, array) {
+  return array[index % array.length];
 };
 
-const arrayToCSVString = array => {
-  // your code here
+function arrayToCSVString(array) {
+  return string = array.join([separator = ',']);
 };
 
-const csvStringToArray = string => {
-  // your code here
+function csvStringToArray(string) {
+  return array = string.split(',');
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
-const addToArray2 = (element, array) => {
-  // your code here
+function addToArray2(element, array) {
+  return [...array, element];
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  return array.splice(index, 1);
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  return numbers.map(string => string.toString());
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  return strings.map(string => string.toUpperCase());
 };
 
-const reverseWordsInArray = strings => {
-  // your code here
+function reverseWordsInArray(strings) {
+  return strings.map(string => string.split('').reverse().join(''));
 };
 
-const onlyEven = numbers => {
-  // your code here
+function onlyEven(numbers) {
+  return numbers.filter(x => x % 2 == 0);
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  return array.slice(0, index).concat(array.slice(index + 1))
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  return strings.filter(string => /^[aeiouAEIOU]/i.test(string));
 };
 
-const removeSpaces = string => {
-  // your code here
-};
+function removeSpaces(string) {
+  return string.replace(/\s/g, '');
+}
 
 const sumNumbers = numbers => {
-  // your code here
+  return numbers.reduce((partialSum, a) => partialSum + a, 0);
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  return strings.sort((a, b) => a.charCodeAt(a.length -1) -b.charCodeAt(b.length -1));
 };
 
 module.exports = {
